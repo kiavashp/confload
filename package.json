@@ -1,5 +1,5 @@
 {
-  "name": "config",
+  "name": "confload",
   "version": "1.0.0",
   "description": "config loader for nodejs",
   "main": "lib/index.js",
@@ -7,15 +7,18 @@
     "test": "mocha"
   },
   "keywords": [
-    "config"
+    "config",
+    "conf",
+    "load",
+    "loader"
   ],
   "author": "Kiavash Page",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kiavashp/config"
+    "url": "https://github.com/kiavashp/confload"
   },
   "bugs": {
-    "url": "https://github.com/kiavashp/config/issues"
+    "url": "https://github.com/kiavashp/confload/issues"
   },
   "devDependencies": {
     "mocha": "^2.4.5",
