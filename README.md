@@ -4,7 +4,7 @@ A simple configuration loader for Node.js
 
 ## Installation
 ```
-npm install config
+npm install confload
 ```
 
 ## Usage
