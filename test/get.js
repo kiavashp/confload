@@ -11,8 +11,6 @@ describe('config.get()', function () {
         let config = new Config();
 
         should(config.get()).exactly(null);
-        should(config.get('onekey')).exactly(null);
-        should(config.get('onekey', 'twokey')).exactly(null);
 
     });
 
@@ -55,6 +53,22 @@ describe('config.get()', function () {
         for (let k of Object.keys(configObject)) {
             should(config.get(k)).exactly(configObject[k]);
         }
+
+    });
+
+    it('should throw on non-existent key', function () {
+
+        let config = new Config();
+
+        config.load({});
+
+        try {
+            config.get('non-existent', 'key');
+        } catch (e) {
+            return;
+        }
+
+        throw Error('should have thrown');
 
     });
 
