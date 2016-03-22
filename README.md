@@ -23,14 +23,14 @@ npm install confload
 #### index.js
 ```javascript
 'use strict';
-const config = require('config').loadFromFile(__dirname + '/config.json');
+const config = require('confload').loadFromFile(__dirname + '/config.json');
 const someModule = require(__dirname + '/lib/some-module');
 ```
 
 #### lib/some-module.js
 ```javascript
 'use strict';
-const config = require('config');
+const config = require('confload');
 
 config.get() // {"some-module": {"example": true}}
 config.get('some-module') // {"example": true}

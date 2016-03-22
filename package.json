@@ -12,7 +12,7 @@
     "load",
     "loader"
   ],
-  "author": "Kiavash Page",
+  "author": "Kiavash Page <kiavashp.npm@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/kiavashp/confload"
