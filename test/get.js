@@ -62,13 +62,9 @@ describe('config.get()', function () {
 
         config.load({});
 
-        try {
+        should.throws(() => {
             config.get('non-existent', 'key');
-        } catch (e) {
-            return;
-        }
-
-        throw Error('should have thrown');
+        });
 
     });
 

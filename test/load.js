@@ -39,14 +39,11 @@ describe('config.load()', function () {
 
         let config = new Config();
 
-        try {
+        should.throws(() => {
             config.load(null);
-        } catch (e) {
-            should(config.config).exactly(null);
-            return;
-        }
+        });
 
-        throw Error('should have thrown');
+        should(config.config).exactly(null);
 
     });
 
@@ -54,14 +51,11 @@ describe('config.load()', function () {
 
         let config = new Config();
 
-        try {
+        should.throws(() => {
             config.load(['config', 'array']);
-        } catch (e) {
-            should(config.config).exactly(null);
-            return;
-        }
+        });
 
-        throw Error('should have thrown');
+        should(config.config).exactly(null);
 
     });
 
@@ -69,14 +63,11 @@ describe('config.load()', function () {
 
         let config = new Config();
 
-        try {
+        should.throws(() => {
             config.load(10243);
-        } catch (e) {
-            should(config.config).exactly(null);
-            return;
-        }
+        });
 
-        throw Error('should have thrown');
+        should(config.config).exactly(null);
 
     });
 
@@ -84,14 +75,11 @@ describe('config.load()', function () {
 
         let config = new Config();
 
-        try {
+        should.throws(() => {
             config.load(40.09142);
-        } catch (e) {
-            should(config.config).exactly(null);
-            return;
-        }
+        });
 
-        throw Error('should have thrown');
+        should(config.config).exactly(null);
 
     });
 
@@ -99,14 +87,11 @@ describe('config.load()', function () {
 
         let config = new Config();
 
-        try {
+        should.throws(() => {
             config.load('config string');
-        } catch (e) {
-            should(config.config).exactly(null);
-            return;
-        }
+        });
 
-        throw Error('should have thrown');
+        should(config.config).exactly(null);
 
     });
 
@@ -114,14 +99,11 @@ describe('config.load()', function () {
 
         let config = new Config();
 
-        try {
+        should.throws(() => {
             config.load(function () { return 'function config'; });
-        } catch (e) {
-            should(config.config).exactly(null);
-            return;
-        }
+        });
 
-        throw Error('should have thrown');
+        should(config.config).exactly(null);
 
     });
 

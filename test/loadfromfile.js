@@ -30,12 +30,9 @@ describe('config.loadFromFile()', function () {
 
         let config = new Config();
 
-        try {
+        should.throws(() => {
             config.loadFromFile(assets['invalid-config-file.json']);
-        } catch (e) {
-            should(config.config).exactly(null);
-            return;
-        }
+        });
 
         should(config.config).exactly(null);
 
