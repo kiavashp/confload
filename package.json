@@ -1,6 +1,6 @@
 {
   "name": "confload",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "config loader for nodejs",
   "main": "lib/index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "load",
     "loader"
   ],
-  "author": "Kiavash Page",
+  "author": "Kiavash Page <kiavashp.npm@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/kiavashp/confload"
