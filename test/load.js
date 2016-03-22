@@ -6,6 +6,15 @@ const Config = require(path.resolve(__dirname, '..')).Config;
 
 describe('config.load()', function () {
 
+    it('should return instance', function () {
+
+        let config = new Config();
+        let instance = config.load({});
+
+        should(instance).instanceOf(Config);
+
+    });
+
     it('should load from an object', function () {
 
         let config = new Config();

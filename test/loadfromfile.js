@@ -7,6 +7,15 @@ const assets = require(path.resolve(__dirname, 'assets'));
 
 describe('config.loadFromFile()', function () {
 
+    it('should return instance', function () {
+
+        let config = new Config();
+        let instance = config.loadFromFile(assets['valid-config-file.json']);
+
+        should(instance).instanceOf(Config);
+
+    });
+
     it('should load from a file', function () {
 
         let config = new Config();
