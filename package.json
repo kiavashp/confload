@@ -1,0 +1,23 @@
+{
+  "name": "config",
+  "version": "1.0.0",
+  "description": "config loader for nodejs",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "config"
+  ],
+  "author": "Kiavash Page",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kiavashp/config"
+  },
+  "bugs": {
+    "url": "https://github.com/kiavashp/config/issues"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
+}
