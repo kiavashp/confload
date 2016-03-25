@@ -2,6 +2,8 @@ config
 ===
 A simple configuration loader for Node.js
 
+[![NPM](https://nodei.co/npm/confload.png?downloads=true)](https://nodei.co/npm/confload/)
+
 [![Build Status](https://travis-ci.org/kiavashp/confload.svg?branch=master)](https://travis-ci.org/kiavashp/confload)
 
 ## Installation
